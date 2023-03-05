@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stilo.css" />
+    <title>Analisador de Números</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="titulo-a"><strong>Analisador de Números</strong></h1>
+    </header>
+    <section>
+      <div class="container">
+        <p class="txtnumero">
+          Número (entre 1 e 100): <input id="txtboxnum" type="number" />
+          <input
+            class="btn1"
+            type="button"
+            value="ADICIONAR"
+            onclick="adicionar()"
+          />
+        </p>
+        <br /><br />
+        <select
+          class="txtexibicao"
+          id="exibir"
+          cols="30"
+          rows="10"
+          size="6"
+        >
+
+    </select>
+        <br />
+        <input
+          class="btn2"
+          type="button"
+          value="FINALIZAR"
+          onclick="finalizar()"
+        />
+        <br>
+        <div class="respostas" id="resps">
+            
+        </div>
+      </div>
+    </section>
+    <footer class="copy">&COPY;Matheus Augusto</footer>
+    <script src="/intscript.js"></script>
+  </body>
+</html>

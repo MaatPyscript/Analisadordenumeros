@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html , body {
+    background: linear-gradient(to bottom, #ccc, #2a61f7) no-repeat;
+    height: 100%;
+    border-top: 150px;
+    border-bottom: 150px;
+    position: relative;
+}
+
+/* Título principal */
+
+.titulo-a {
+    text-align: center;
+    text-transform: uppercase;
+    font: normal 30pt 'Roboto', sans-serif;
+    font-weight: 800;
+    color: azure;
+    text-shadow: 2px 2px 2px black;
+}
+
+/* Conteúdo (Card front) */
+ 
+.container {
+    background: white;
+    align-items: center;
+    text-align: center;
+    border-radius: 9px;
+    margin: 100px;
+    padding: 100px;
+    box-shadow: 2px 2px 5px black;
+    position: absolute;
+}
+
+/* Formulários */
+
+.txtnumero {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    font: bolder 12pt 'Poppins', sans-serif;
+}
+
+.txtboxnum {
+    height: 20px;
+    border: none;
+    border-radius: 2px;
+    background: #e6e6e6;
+    color: black;
+    font-size: 12pt;
+}
+
+.btn1 {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 90px;
+    height: 25px;
+    cursor: pointer;
+}
+
+select#exibir {
+    width: 150px;
+    height: 160px;
+    display: flex;
+    border-radius: 2px;
+    background: #e6e6e6;
+    color: black;
+    font-size: 12pt;
+}
+
+.btn2 {
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+/* Respostas */
+
+.respostas {
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    font: bolder 14pt 'Poppins', sans-serif;
+    text-align: left;
+}
+
+/* Footer */
+
+.copy {
+    text-align: center;
+    font-style: italic;
+}
+
+/* Media queries para computadores */
+
+@media screen and (min-width: 768px) {
+    html, body {
+      height: auto;
+      border-top: none;
+      border-bottom: none;
+    }
+    
+    .container {
+      margin: 50px;
+      padding: 50px;
+    }
+    
+    .txtnumero {
+      justify-content: space-between;
+    }
+    
+    select#exibir {
+      width: 200px;
+    }
+  }
+
+/* CSS para dispositivos móveis */
+
+@media only screen and (max-width: 600px) {
+    html, body {
+    border-top: 100px;
+    border-bottom: 100px;
+    }
+    .container {
+    margin: 10px;
+    padding: 10px;
+    }
+    .titulo-a {
+    font-size: 24pt;
+    }
+    .txtnumero {
+    flex-direction: column;
+    text-align: center;
+    }
+    .txtboxnum {
+    width: 100%;
+    margin-bottom: 10px;
+    }
+    select#exibir {
+    width: 100%;
+    }
+    .respostas {
+    font-size: 12pt;
+    }
+    }
